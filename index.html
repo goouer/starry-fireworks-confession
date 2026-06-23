@@ -55,7 +55,6 @@
       width: 100vw;
       min-height: 100svh;
       isolation: isolate;
-      overflow: hidden;
     }
 
     #skyCanvas {
@@ -111,7 +110,6 @@
       position: relative;
       z-index: 5;
       width: min(92vw, 720px);
-      height: 100svh;
       min-height: 100svh;
       margin: 0 auto;
       padding:
@@ -532,7 +530,8 @@
       }
 
       .stage {
-        padding-top: 3vh;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
       }
 
       .letter {
@@ -570,8 +569,14 @@
     }
 
     @media (max-height: 680px) {
+      .stage {
+        align-content: start;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+      }
+
       .message {
-        min-height: 6em;
+        min-height: 4em;
         line-height: 1.68;
       }
 
